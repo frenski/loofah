@@ -59,3 +59,17 @@ task :fix_css do
   puts "* fixing css"
   File.open("doc/rdoc.css", "a") { |f| f.write better_css }
 end
+
+begin
+  require 'jeweler'
+  Jeweler::Tasks.new do |gemspec|
+    gemspec.name = "loofah"
+    gemspec.summary = "Transforming HTML/XML documents and fragments"
+    gemspec.description = "Loofah is a general library for manipulating and transforming HTML/XML documents and fragments. It’s built on top of Nokogiri and libxml2, so it’s fast and has a nice API. "
+    gemspec.email = "frenski@gmail.com.com"
+    gemspec.homepage = "git://github.com/frenski/loofah.git"
+    gemspec.authors = ["Mike Dalessio"]
+  end
+rescue LoadError
+  puts "Jeweler not available. Install it with: gem install jeweler"
+end
