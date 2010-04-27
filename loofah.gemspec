@@ -53,7 +53,7 @@ Gem::Specification.new do |s|
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.3.5}
-  s.summary = %q{{HTML/XML manipulation and sanitization based on Nokogiri}
+  s.summary = %q{HTML/XML manipulation and sanitization based on Nokogiri}
   s.test_files = [
     "test/helper.rb"
   ]
